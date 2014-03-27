@@ -1,0 +1,6 @@
+<platform xmlns="http://ns.adobe.com/air/extension/4.0">
+    <sdkVersion>7.0</sdkVersion>
+   <linkerOptions>
+        <option>-L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib</option>
+    </linkerOptions>
+</platform>
