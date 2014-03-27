@@ -1,4 +1,4 @@
-# IOS Shareing With Instagram App ANE
+# IOS Sharing With Instagram App ANE
 ===============
 
 iOS sharing for Instagram - Adobe Air Native Extension
