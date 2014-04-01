@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		3C4213D218E4D06500536D9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4213D118E4D06500536D9F /* Foundation.framework */; };
 		3C4213D718E4D06500536D9F /* ShareWithInstagram.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3C4213D618E4D06500536D9F /* ShareWithInstagram.h */; };
-		3C4213D918E4D06500536D9F /* ShareWithInstagram.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4213D818E4D06500536D9F /* ShareWithInstagram.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3C4213D918E4D06500536D9F /* ShareWithInstagram.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4213D818E4D06500536D9F /* ShareWithInstagram.m */; };
 		3C4213E018E4D06500536D9F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4213DF18E4D06500536D9F /* XCTest.framework */; };
 		3C4213E118E4D06500536D9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4213D118E4D06500536D9F /* Foundation.framework */; };
 		3C4213E318E4D06500536D9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4213E218E4D06500536D9F /* UIKit.framework */; };
 		3C4213E618E4D06500536D9F /* libShareWithInstagram.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4213CE18E4D06500536D9F /* libShareWithInstagram.a */; };
 		3C4213EC18E4D06500536D9F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C4213EA18E4D06500536D9F /* InfoPlist.strings */; };
 		3C4213EE18E4D06500536D9F /* ShareWithInstagramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4213ED18E4D06500536D9F /* ShareWithInstagramTests.m */; };
-		3C4213F918E4D12100536D9F /* Instagram.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4213F818E4D12100536D9F /* Instagram.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3C4213F918E4D12100536D9F /* Instagram.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4213F818E4D12100536D9F /* Instagram.m */; };
 		3C4213FB18E4D16800536D9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4213FA18E4D16800536D9F /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -419,6 +419,7 @@
 				3C4213F318E4D06500536D9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C4213F418E4D06500536D9F /* Build configuration list for PBXNativeTarget "ShareWithInstagramTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +428,7 @@
 				3C4213F618E4D06500536D9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

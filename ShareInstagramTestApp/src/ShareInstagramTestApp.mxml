@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" applicationDPI="160">
+	
+	<fx:Script>
+		<![CDATA[
+			import com.azer.ios.Share;
+			
+			
+			protected var instagramios:*=null;
+			protected var  bitmapdata:BitmapData = null;
+			protected var byte:ByteArray = null;
+			protected function shareWInstagram():void{
+				if(instagramios == null){ instagramios = Share.getInstance(); }
+				instagramios.addEventListener(StatusEvent.STATUS, onStatusHandler);
+				bitmapdata = new  BitmapData(612,612,false,0xFF0000);
+				byte = new ByteArray();
+				byte=bitmapdata.encode(bitmapdata.rect, new JPEGEncoderOptions(90), byte);
+				instagramios.shareWithInstagram(byte,"Test");
+			}
+			
+			protected function onStatusHandler(event:StatusEvent):void{
+				instagramios.removeEventListener(StatusEvent.STATUS, onStatusHandler);
+				instagramios.dispose();
+				instagramios = null;
+				bitmapdata.dispose();
+				bitmapdata = null;
+				byte.clear();
+				byte= null;
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<s:Button label="Share With Instagram" click="shareWInstagram()" verticalCenter="1" horizontalCenter="1"/>
+</s:Application>

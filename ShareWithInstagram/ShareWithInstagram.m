@@ -34,11 +34,6 @@ static ShareWithInstagram *sharedInstance = nil;
     return self;
 }
 
-- (void)dealloc
-{
-    [super dealloc];
-}
-
 - (UIAlertView*) notInstalledAlert
 {
     return [[UIAlertView alloc] initWithTitle:@"Instagram Not Installed!" message:@"Instagram must be installed on the device in order to post images" delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
