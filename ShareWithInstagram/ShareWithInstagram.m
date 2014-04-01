@@ -8,7 +8,7 @@
 
 #import "ShareWithInstagram.h"
 
-FREContext AirIPCtx = nil;
+FREContext ShareWInstagramCtx = nil;
 
 @implementation ShareWithInstagram
 
@@ -54,7 +54,7 @@ static ShareWithInstagram *sharedInstance = nil;
         UIViewController *rootViewController = [[[UIApplication sharedApplication] keyWindow] rootViewController];
         [Instagram postImage:image withCaption:caption inView:rootViewController.view];
         
-        FREDispatchStatusEventAsync(AirIPCtx, (const uint8_t *)"INSTAGRAM", (const uint8_t *)"OK");
+        FREDispatchStatusEventAsync(ShareWInstagramCtx, (const uint8_t *)"INSTAGRAM", (const uint8_t *)"OK");
     }
     else{
         [self.notInstalledAlert show];
@@ -123,7 +123,7 @@ void ContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx,
     
 	*functionsToSet = func;
     
-    AirIPCtx = ctx;
+    ShareWInstagramCtx = ctx;
     
     NSLog(@"Exiting ContextInitializer()");
     
@@ -131,7 +131,7 @@ void ContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx,
 
 
 void ContextFinalizer(FREContext ctx) {
-    AirIPCtx = nil;
+    ShareWInstagramCtx = nil;
     return;
 }
 
