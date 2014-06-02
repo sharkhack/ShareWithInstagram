@@ -31,7 +31,8 @@
 						-package -target ane ${app.releasedir}/ShareWithInstagramIos.ane ${app.extensionxmlfile} 
 						-swc ${app.swcfilename}
 						-platform iPhone-ARM library.swf libShareWithInstagram.a
-						-platformoptions ios-platformoptions.xml -C ."/>
+						-platformoptions ios-platformoptions.xml -C .
+						-platform default library.swf"/>
 		</exec>
 		<delete file="${app.rootdir}/library.swf"/>
 		<delete file="${app.rootdir}/${app.swcfilename}"/>
